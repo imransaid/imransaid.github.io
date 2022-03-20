@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Poppins:wght@200;500;700;800&display=swap");
+:root {
+  --first-color: #090e14;
+  --second-color: #b66015c7;
+  --third-color: #7f800a;
+}
+
+::selection {
+  /* Change highlight background color to black */
+  background: var(--third-color);
+  /* Change highlight text color to red */
+  color: aliceblue;
+}
+
+body {
+  margin-top: 70px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(182, 96, 21, 0.19091386554621848) 54%, rgba(127, 128, 10, 0.4430147058823529) 86%), url(img/bg-2.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+/* =============================Navbar Section============================= */
+/* nav {
+  background-color: #13171d;
+  padding: 12px;
+} */
+
+.navbar-brand {
+  font-family: "Monoton", cursive;
+  font-size: 1.5rem;
+  /* color: var(--third-color) !important; */
+}
+
+.navbar-brand:hover {
+  color: var(--third-color) !important;
+}
+
+nav ul li {
+  padding-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* =============================Hero Section============================= */
+.hero {
+  background: url("img/imran_jumbotron_3.jpg") repeat scroll center center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--third-color);
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+}
+
+.hero-content ul {
+  margin-top: -15px;
+}
+
+.hero-content ul li a {
+  padding-right: 15px;
+  font-size: 0.8em;
+  color: aliceblue;
+}
+
+/* =============================About Section============================= */
+.about {
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  background-color: var(--first-color);
+}
+
+.about .about-img img {
+  width: 100%;
+  box-shadow: -17px -16px 25px -7px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: -17px -16px 25px -7px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -17px -16px 25px -7px rgba(0, 0, 0, 0.41);
+  /* padding: 30px; */
+}
+
+.about-desc {
+  /* margin-top: px; */
+  /* padding: 25px; */
+  /* color: rgba(235, 110, 110, 0.678); */
+  color: var(--second-color);
+}
+
+.about-desc .p-heading {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  line-height: 40px;
+}
+
+.about-desc .p-desc {
+  font-size: 18px;
+  color: var(--third-color);
+  line-height: 2em;
+}
+
+/* =============================Service Section============================= */
+.service {
+  background-color: var(--first-color);
+  color: var(--third-color);
+  padding: 30px;
+}
+
+.service .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.service h3 {
+  color: var(--second-color);
+}
+
+.service .service-icon img {
+  height: 70px;
+  padding-bottom: 5px;
+}
+
+/* =============================Portfolio Section============================= */
+
+.portfolio {
+  margin-bottom: 60px;
+}
+
+.portfolio h2 {
+  color: rgba(240, 248, 255, 0.76);
+  letter-spacing: 3px;
+  font-family: "Monoton", sans-serif;
+}
+
+.bg-darkYelo {
+  background-color: var(--first-color);
+  color: var(--third-color);
+}
+
+.round-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #8d8d8d98;
+  color: white;
+}
+
+.round-icon:hover {
+  color: var(--third-color);
+  background-color: var(--first-color);
+}
+
+.falarge {
+  font-size: 3em;
+  color: #d6d6d6;
+}
+
+.falarge:hover {
+  color: var(--first-color);
+}
+
+/* =============================Get in touch Section============================= */
+.getInTouch {
+  margin-top: 60px;
+  background-color: var(--first-color);
+  padding: 100px 0;
+}
+
+.getInTouch h2 {
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+.getInTouch p {
+  color: var(--third-color);
+}
+
+form {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-c {
+  color: var(--third-color);
+  border-radius: 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-radius: 0;
+  border: 1px solid #4e4e4e;
+  background-color: var(--first-color);
+  color: #ddd;
+}
+
+input:focus {
+  background-color: var(--first-color) !important;
+  color: #ddd !important;
+}
+
+textarea {
+  border-radius: 0 !important;
+  border: 1px solid #4e4e4e !important;
+  background-color: var(--first-color) !important;
+  color: #ddd !important;
+}
+
+textarea:focus {
+  background-color: var(--first-color) !important;
+  color: #ddd;
+}
+
+.btn-send {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  border-style: none;
+  background-color: var(--third-color);
+  color: #ddd;
+}
+
+.btn-send:hover {
+  background-color: var(--second-color);
+  color: #ddd;
+}
+
+::placeholder {
+  color: rgb(65, 65, 65) !important;
+  opacity: 1; /* Firefox */
+}
+
+/* =============================Footer============================= */
+footer {
+  background-color: #13171d;
+  padding: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer ul li {
+  padding-right: 20px;
+}
+
+footer ul li a {
+  font-size: 1.5em;
+  color: #334152;
+}
+
+footer ul li a:hover {
+  color: var(--third-color);
+}
+
+footer p {
+  color: #334152;
+}
+
+footer .p-footer a {
+  color: var(--third-color);
+}
